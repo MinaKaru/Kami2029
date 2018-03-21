@@ -17,12 +17,35 @@ namespace test1
             // 宣告變數
 
             Console.Write("請輸入身高:");
-            string tall = Console.ReadLine();
+            float tall = float.Parse(Console.ReadLine()) / 100;
+
             Console.Write("請輸入體重:");
-            string weight = Console.ReadLine();
+            float weight = float.Parse(Console.ReadLine());
+
             double BMI;
 
-            BMI = double.Parse(weight) / (double.Parse(tall) / 100 * double.Parse(tall) / 100);
+            BMI = weight / (tall * tall);
+
+            if (BMI < 16.5 || BMI > 31.5)
+            {
+                Console.WriteLine("恭喜你不用當兵");
+            }
+
+            else if (16.5 <= BMI && BMI < 17)
+            {
+                Console.WriteLine("你還是得當替代役");
+            }
+
+            else if (31 <= BMI && BMI < 31.5)
+            {
+                Console.WriteLine("你還是得當替代役");
+            }
+
+            else
+            {
+                Console.WriteLine("乖乖當兵吧");
+            }
+
             Console.WriteLine("您的BMI指數為" + BMI);
             Console.ReadLine();
         }
