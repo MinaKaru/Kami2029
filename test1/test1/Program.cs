@@ -18,6 +18,8 @@ namespace test1
 
             Console.WriteLine("BMI計算機");
 
+            while (true)
+            {
                 // 宣告兩個變數 , 屬入身高體重
                 Console.Write("請輸入身高:");
                 float tall = float.Parse(Console.ReadLine()) / 100;
@@ -99,8 +101,8 @@ namespace test1
 
                 // 顯示結果
                 Console.WriteLine("您的BMI指數為" + BMI + "kg/m*m");
-                Console.ReadLine();    
-            
+                Console.ReadLine();
+            } 
         }
     }
 }
