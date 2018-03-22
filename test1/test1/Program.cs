@@ -16,6 +16,8 @@ namespace test1
             Console.ForegroundColor = ConsoleColor.Red;
             Console.BackgroundColor = ConsoleColor.White;
 
+            Console.WriteLine("BMI計算機");
+
                 // 宣告兩個變數 , 屬入身高體重
                 Console.Write("請輸入身高:");
                 float tall = float.Parse(Console.ReadLine()) / 100;
